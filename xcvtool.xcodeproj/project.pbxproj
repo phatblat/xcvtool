@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		F82462CB24281FC200C90113 /* XctoolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82462C224281FC200C90113 /* XctoolKit.framework */; };
 		F82462D024281FC200C90113 /* XctoolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82462CF24281FC200C90113 /* XctoolKitTests.swift */; };
 		F82462D224281FC200C90113 /* XctoolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F82462C424281FC200C90113 /* XctoolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F82462DB242822B400C90113 /* XcodeProj in Frameworks */ = {isa = PBXBuildFile; productRef = F82462DA242822B400C90113 /* XcodeProj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82462DB242822B400C90113 /* XcodeProj in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = xcvtool;
+			packageProductDependencies = (
+				F82462DA242822B400C90113 /* XcodeProj */,
+			);
 			productName = xcvtool;
 			productReference = F82462B324281E5F00C90113 /* xcvtool */;
 			productType = "com.apple.product-type.tool";
@@ -207,7 +212,7 @@
 				};
 			};
 			buildConfigurationList = F82462AE24281E5F00C90113 /* Build configuration list for PBXProject "xcvtool" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = F82462AA24281E5F00C90113;
+			packageReferences = (
+				F82462D9242822B400C90113 /* XCRemoteSwiftPackageReference "xcodeproj" */,
+			);
 			productRefGroup = F82462B424281E5F00C90113 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -543,6 +551,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F82462D9242822B400C90113 /* XCRemoteSwiftPackageReference "xcodeproj" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tuist/xcodeproj";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F82462DA242822B400C90113 /* XcodeProj */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F82462D9242822B400C90113 /* XCRemoteSwiftPackageReference "xcodeproj" */;
+			productName = XcodeProj;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F82462AB24281E5F00C90113 /* Project object */;
 }
