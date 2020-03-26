@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F82462B224281E5F00C90113"
+               BlueprintIdentifier = "xcvtool::xcvtool"
                BuildableName = "xcvtool"
                BlueprintName = "xcvtool"
                ReferencedContainer = "container:xcvtool.xcodeproj">
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "xcvtool::XcvtoolKitTests"
+               BuildableName = "XcvtoolKitTests.xctest"
+               BlueprintName = "XcvtoolKitTests"
+               ReferencedContainer = "container:xcvtool.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -44,22 +54,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F82462B224281E5F00C90113"
+            BlueprintIdentifier = "xcvtool::xcvtool"
             BuildableName = "xcvtool"
             BlueprintName = "xcvtool"
             ReferencedContainer = "container:xcvtool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "/Volumes/ThunderBay/Users/phatblat/dev/ios/Bundles/Example/Bundles.xcodeproj"
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "/Volumes/ThunderBay/Users/phatblat/dev/ldg/L8r/L8r.xcodeproj"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,16 +67,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F82462B224281E5F00C90113"
-            BuildableName = "xcvtool"
-            BlueprintName = "xcvtool"
-            ReferencedContainer = "container:xcvtool.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

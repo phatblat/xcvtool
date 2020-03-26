@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct xcvtool {
+    var text = "Hello, World!"
+}
+
+public func main(arguments: [String] = CommandLine.arguments) {
+    
+}

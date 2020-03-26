@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "xcvtool::XcvtoolKit"
                BuildableName = "XcvtoolKit.framework"
                BlueprintName = "XcvtoolKit"
+               ReferencedContainer = "container:xcvtool.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "xcvtool::xcvtool"
+               BuildableName = "xcvtool"
+               BlueprintName = "xcvtool"
                ReferencedContainer = "container:xcvtool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,15 +71,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "xcvtool::XcvtoolKit"
-            BuildableName = "XcvtoolKit.framework"
-            BlueprintName = "XcvtoolKit"
-            ReferencedContainer = "container:xcvtool.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
