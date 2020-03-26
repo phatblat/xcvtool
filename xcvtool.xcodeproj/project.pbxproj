@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F82462B724281E5F00C90113 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82462B624281E5F00C90113 /* main.swift */; };
-		F82462CB24281FC200C90113 /* XctoolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82462C224281FC200C90113 /* XctoolKit.framework */; };
-		F82462D024281FC200C90113 /* XctoolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82462CF24281FC200C90113 /* XctoolKitTests.swift */; };
-		F82462D224281FC200C90113 /* XctoolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F82462C424281FC200C90113 /* XctoolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F82462CB24281FC200C90113 /* XcvtoolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82462C224281FC200C90113 /* XcvtoolKit.framework */; };
+		F82462D024281FC200C90113 /* XcvtoolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82462CF24281FC200C90113 /* XcvtoolKitTests.swift */; };
+		F82462D224281FC200C90113 /* XcvtoolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F82462C424281FC200C90113 /* XcvtoolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F82462DB242822B400C90113 /* XcodeProj in Frameworks */ = {isa = PBXBuildFile; productRef = F82462DA242822B400C90113 /* XcodeProj */; };
+		F82462DF242824AA00C90113 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82462DE242824AA00C90113 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F82462CC24281FC200C90113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82462AB24281E5F00C90113 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82462C124281FC200C90113;
+			remoteInfo = XctoolKit;
+		};
+		F82462DC2428248700C90113 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F82462AB24281E5F00C90113 /* Project object */;
 			proxyType = 1;
@@ -39,12 +47,13 @@
 /* Begin PBXFileReference section */
 		F82462B324281E5F00C90113 /* xcvtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcvtool; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82462B624281E5F00C90113 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F82462C224281FC200C90113 /* XctoolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XctoolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82462C424281FC200C90113 /* XctoolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XctoolKit.h; sourceTree = "<group>"; };
+		F82462C224281FC200C90113 /* XcvtoolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XcvtoolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82462C424281FC200C90113 /* XcvtoolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcvtoolKit.h; sourceTree = "<group>"; };
 		F82462C524281FC200C90113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F82462CA24281FC200C90113 /* XctoolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XctoolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82462CF24281FC200C90113 /* XctoolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XctoolKitTests.swift; sourceTree = "<group>"; };
+		F82462CA24281FC200C90113 /* XcvtoolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcvtoolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82462CF24281FC200C90113 /* XcvtoolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcvtoolKitTests.swift; sourceTree = "<group>"; };
 		F82462D124281FC200C90113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82462DE242824AA00C90113 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82462CB24281FC200C90113 /* XctoolKit.framework in Frameworks */,
+				F82462CB24281FC200C90113 /* XcvtoolKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				F82462B524281E5F00C90113 /* xcvtool */,
-				F82462C324281FC200C90113 /* XctoolKit */,
-				F82462CE24281FC200C90113 /* XctoolKitTests */,
+				F82462C324281FC200C90113 /* XcvtoolKit */,
+				F82462CE24281FC200C90113 /* XcvtoolKitTests */,
 				F82462B424281E5F00C90113 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				F82462B324281E5F00C90113 /* xcvtool */,
-				F82462C224281FC200C90113 /* XctoolKit.framework */,
-				F82462CA24281FC200C90113 /* XctoolKitTests.xctest */,
+				F82462C224281FC200C90113 /* XcvtoolKit.framework */,
+				F82462CA24281FC200C90113 /* XcvtoolKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,22 +111,23 @@
 			path = xcvtool;
 			sourceTree = "<group>";
 		};
-		F82462C324281FC200C90113 /* XctoolKit */ = {
+		F82462C324281FC200C90113 /* XcvtoolKit */ = {
 			isa = PBXGroup;
 			children = (
-				F82462C424281FC200C90113 /* XctoolKit.h */,
+				F82462C424281FC200C90113 /* XcvtoolKit.h */,
 				F82462C524281FC200C90113 /* Info.plist */,
+				F82462DE242824AA00C90113 /* Main.swift */,
 			);
-			path = XctoolKit;
+			path = XcvtoolKit;
 			sourceTree = "<group>";
 		};
-		F82462CE24281FC200C90113 /* XctoolKitTests */ = {
+		F82462CE24281FC200C90113 /* XcvtoolKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F82462CF24281FC200C90113 /* XctoolKitTests.swift */,
+				F82462CF24281FC200C90113 /* XcvtoolKitTests.swift */,
 				F82462D124281FC200C90113 /* Info.plist */,
 			);
-			path = XctoolKitTests;
+			path = XcvtoolKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82462D224281FC200C90113 /* XctoolKit.h in Headers */,
+				F82462D224281FC200C90113 /* XcvtoolKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +155,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F82462DD2428248700C90113 /* PBXTargetDependency */,
 			);
 			name = xcvtool;
 			packageProductDependencies = (
@@ -154,9 +165,9 @@
 			productReference = F82462B324281E5F00C90113 /* xcvtool */;
 			productType = "com.apple.product-type.tool";
 		};
-		F82462C124281FC200C90113 /* XctoolKit */ = {
+		F82462C124281FC200C90113 /* XcvtoolKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F82462D324281FC200C90113 /* Build configuration list for PBXNativeTarget "XctoolKit" */;
+			buildConfigurationList = F82462D324281FC200C90113 /* Build configuration list for PBXNativeTarget "XcvtoolKit" */;
 			buildPhases = (
 				F82462BD24281FC200C90113 /* Headers */,
 				F82462BE24281FC200C90113 /* Sources */,
@@ -167,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = XctoolKit;
+			name = XcvtoolKit;
 			productName = XctoolKit;
-			productReference = F82462C224281FC200C90113 /* XctoolKit.framework */;
+			productReference = F82462C224281FC200C90113 /* XcvtoolKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F82462C924281FC200C90113 /* XctoolKitTests */ = {
+		F82462C924281FC200C90113 /* XcvtoolKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F82462D624281FC200C90113 /* Build configuration list for PBXNativeTarget "XctoolKitTests" */;
+			buildConfigurationList = F82462D624281FC200C90113 /* Build configuration list for PBXNativeTarget "XcvtoolKitTests" */;
 			buildPhases = (
 				F82462C624281FC200C90113 /* Sources */,
 				F82462C724281FC200C90113 /* Frameworks */,
@@ -185,9 +196,9 @@
 			dependencies = (
 				F82462CD24281FC200C90113 /* PBXTargetDependency */,
 			);
-			name = XctoolKitTests;
+			name = XcvtoolKitTests;
 			productName = XctoolKitTests;
-			productReference = F82462CA24281FC200C90113 /* XctoolKitTests.xctest */;
+			productReference = F82462CA24281FC200C90113 /* XcvtoolKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ben Chatelain";
 				TargetAttributes = {
 					F82462B224281E5F00C90113 = {
@@ -205,6 +216,7 @@
 					};
 					F82462C124281FC200C90113 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					F82462C924281FC200C90113 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -212,7 +224,7 @@
 				};
 			};
 			buildConfigurationList = F82462AE24281E5F00C90113 /* Build configuration list for PBXProject "xcvtool" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -228,8 +240,8 @@
 			projectRoot = "";
 			targets = (
 				F82462B224281E5F00C90113 /* xcvtool */,
-				F82462C124281FC200C90113 /* XctoolKit */,
-				F82462C924281FC200C90113 /* XctoolKitTests */,
+				F82462C124281FC200C90113 /* XcvtoolKit */,
+				F82462C924281FC200C90113 /* XcvtoolKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82462DF242824AA00C90113 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82462D024281FC200C90113 /* XctoolKitTests.swift in Sources */,
+				F82462D024281FC200C90113 /* XcvtoolKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +293,13 @@
 /* Begin PBXTargetDependency section */
 		F82462CD24281FC200C90113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F82462C124281FC200C90113 /* XctoolKit */;
+			target = F82462C124281FC200C90113 /* XcvtoolKit */;
 			targetProxy = F82462CC24281FC200C90113 /* PBXContainerItemProxy */;
+		};
+		F82462DD2428248700C90113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82462C124281FC200C90113 /* XcvtoolKit */;
+			targetProxy = F82462DC2428248700C90113 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -402,6 +420,7 @@
 		F82462BB24281E5F00C90113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -413,6 +432,7 @@
 		F82462BC24281E5F00C90113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -424,6 +444,7 @@
 		F82462D424281FC200C90113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -432,16 +453,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XctoolKit/Info.plist;
+				INFOPLIST_FILE = XctvoolKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XctoolKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XcvtoolKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -451,6 +473,7 @@
 		F82462D524281FC200C90113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -459,14 +482,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XctoolKit/Info.plist;
+				INFOPLIST_FILE = XctvoolKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XctoolKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XcvtoolKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,16 +501,17 @@
 		F82462D724281FC200C90113 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = XctoolKitTests/Info.plist;
+				INFOPLIST_FILE = XcvtoolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XctoolKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XcvtoolKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -496,16 +520,17 @@
 		F82462D824281FC200C90113 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MTGSZH8QM4;
-				INFOPLIST_FILE = XctoolKitTests/Info.plist;
+				INFOPLIST_FILE = XcvtoolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XctoolKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.log-g.XcvtoolKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -532,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F82462D324281FC200C90113 /* Build configuration list for PBXNativeTarget "XctoolKit" */ = {
+		F82462D324281FC200C90113 /* Build configuration list for PBXNativeTarget "XcvtoolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F82462D424281FC200C90113 /* Debug */,
@@ -541,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F82462D624281FC200C90113 /* Build configuration list for PBXNativeTarget "XctoolKitTests" */ = {
+		F82462D624281FC200C90113 /* Build configuration list for PBXNativeTarget "XcvtoolKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F82462D724281FC200C90113 /* Debug */,

@@ -1,15 +1,15 @@
 //
-//  XctoolKitTests.swift
-//  XctoolKitTests
+//  XcvtoolKitTests.swift
+//  XcvtoolKitTests
 //
 //  Created by Ben Chatelain on 3/22/20.
 //  Copyright © 2020 Ben Chatelain. All rights reserved.
 //
 
 import XCTest
-@testable import XctoolKit
+@testable import XcvtoolKit
 
-class XctoolKitTests: XCTestCase {
+class XcvtoolKitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
