@@ -10,7 +10,9 @@ import XcodeProj
 import PathKit
 import Foundation
 
-guard CommandLine.arguments.count == 2 else {
+debugPrint("args: \(CommandLine.arguments)")
+
+guard CommandLine.arguments.count == 3 else {
     let commandName = Path(CommandLine.arguments[0]).lastComponent
     fputs("usage: \(commandName) <project> <new-version>\n", stderr)
     exit(1)
